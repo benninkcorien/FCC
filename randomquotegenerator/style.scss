@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display|PT+Sans);
+
+$teal: #1E8C8B;
+$tealhover: #27B8B6;
+$dbrown: #40382E ;
+$mbrown: #594F46;
+$lbrown: #8C8672;
+$llbrown: #A6A28D;
+
+$light: #E0DBBF;
+$hover: #F5EFD0;
+
+body {
+	background-color: $dbrown;
+	color: $llbrown;
+}
+#main {
+  margin: 5em calc(50% - 400px);
+  width: 800px;
+}
+
+h1 {
+	font-family: "Playfair Display", serif;
+	font-size: 36px;
+	padding: 24px;
+	text-align: center;
+}
+
+.quote {
+	font-family: "PT Sans", sans-serif;
+	font-size: 24px;
+	padding: 24px;
+	text-align: center;
+	color: $hover;
+	height: 150px;
+}
+blockquote, q {
+    quotes: "“" "”" "‘" "’";
+    &:before {
+        content: open-quote;
+        }
+    &:after {
+        content: close-quote;
+    }
+}
+
+#buttons {
+	margin-top: 20px;
+	#getQuote, #tweetQuote {
+		background-color: $teal;
+		border: none;
+		color: $light;
+		font-family: "PT Sans", sans-serif;
+		font-size: 16px;
+		padding: 14px;
+		width: 200px;
+		&:hover {
+			background-color: $tealhover;
+		}
+	}
+	#getQuote {
+		margin: 0 50px 0 200px;
+	}
+
+}
